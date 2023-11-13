@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class notas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float n1;
+        float n2;
+        float media,i, cont = 0 ;
+
+        for (i = 0; i <2;) {
+            System.out.println("informe a 1° nota: ");
+            n1 = scanner.nextFloat();
+            System.out.println("-" + "-".repeat(60));
+            System.out.println("informe a 2° nota: ");
+            n2 = scanner.nextFloat();
+            System.out.println("-" + "-".repeat(60));
+            media = (n1 + n2 )/ 2;
+            System.out.println("Média Final do  aluno é:" + media);
+            System.out.println("-" + "-".repeat(60));
+             if (media >= 7) {
+                 System.out.println("Aluno aprovado, a média " +media+ " é compatível com a nota necessária para aprovação.");
+             }
+             else {
+                 System.out.println("Aluno reprovado, pois a sua média foi " +media + " abaixo da nota necessária para aprovação.");
+             }
+
+            break;
+
+        }
+    }
+}
