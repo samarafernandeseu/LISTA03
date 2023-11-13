@@ -1,0 +1,59 @@
+///triangulo pascal///
+import java.text.BreakIterator;
+import java.util.Scanner;
+
+public class Triangulopascal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean escolha = true;
+        while (escolha) {
+            System.out.println("°" + "°".repeat(60));
+            System.out.println("                       | Opções | ");
+            System.out.println("°" + "°".repeat(60));
+            System.out.println("""
+                    1. Triângulo de Pascal-
+                    """);
+
+            System.out.print("Digite a opção: ");
+            String opcao = scanner.next();
+            int n;
+            if (opcao.equals("1")) {
+                System.out.print("Digite o número de linhas: ");
+                n = scanner.nextInt();
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n - i + 1; j++) {
+                        System.out.print(" ");
+                    }
+                    for (int j = 0; j < i + 1; j++) {
+                        System.out.print(binomialCoefficient(i, j) + " ");
+                    }
+                    System.out.println();
+
+                } elif (false); {
+                    System.out.println("Fim do Programa!");
+
+                }
+                escolha = false;
+            } else {
+                System.out.println("\n Escolha não válida.\n Tente outra vez.");
+            }
+        }
+        scanner.close();
+    }
+
+   public static void elif(boolean equals) {
+    }
+
+    public static int binomialCoefficient(int n, int k) {
+        return factorial(n) / (factorial(k) * factorial(n - k));
+    }
+
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+}
+
