@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class notas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float n1, n2, n3, n4, n5, n6, n7, n8, n9, n10;
+        float media, cont;
+        cont = 1;
+        while (cont<10) {
+            System.out.println("informe a 1° nota: ");
+            n1 = scanner.nextFloat();
+            System.out.println("informe a 2° nota: ");
+            n2 = scanner.nextFloat();
+            System.out.println("informe a 3° nota: ");
+            n3 = scanner.nextFloat();
+            System.out.println("informe a 4° nota: ");
+            n4 = scanner.nextFloat();
+            System.out.println("informe a 5° nota: ");
+            n5 = scanner.nextFloat();
+            System.out.println("informe a 6° nota: ");
+            n6 = scanner.nextFloat();
+            System.out.println("informe a 7° nota: ");
+            n7 = scanner.nextFloat();
+            System.out.println("informe a 8° nota: ");
+            n8 = scanner.nextFloat();
+            System.out.println("informe a 9° nota: ");
+            n9 = scanner.nextFloat();
+            System.out.println("informe a 10° nota: ");
+            n10 = scanner.nextFloat();
+            media = (n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10)/ 10;
+            System.out.println("Media final do aluno é:" + media );
+
+        }
+    }
+}
